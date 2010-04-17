@@ -53,10 +53,10 @@ will use this find the canonical version of the library.
 
 RakeGem provides three rake tasks:
 
-`rake gemspec` will update your gemspec with the latest version (taken from
+`rake release:gemspec` will update your gemspec with the latest version (taken from
 the `lib/NAME.rb` file) and file list (as reported by `git ls-files`).
 
-`rake build` will update your gemspec, build your gemspec into a gem, and
+`rake release:build` will update your gemspec, build your gemspec into a gem, and
 place it in the `pkg` directory.
 
 `rake release` will update your gemspec, build your gem, make a commit with
