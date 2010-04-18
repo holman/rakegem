@@ -59,6 +59,8 @@ the `lib/NAME.rb` file) and file list (as reported by `git ls-files`).
 `rake release:build` will update your gemspec, build your gemspec into a gem, and
 place it in the `pkg` directory.
 
+`rake release:install` will build your gem and install it locally from /pkg. Doesn't assume sudo.
+
 `rake release` will update your gemspec, build your gem, make a commit with
 the message `Release 0.1.0` (with the correct version, obviously), tag the
 commit with `v0.1.0` (again with the correct version), and push the `master`
