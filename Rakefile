@@ -101,7 +101,6 @@ namespace :release do
     sh "git push origin v#{version}"
     sh "gem push pkg/#{name}-#{version}.gem"
   end
-end
 
   desc "build #{name} version #{version} (after updating)"
   task :build => :gemspec do
