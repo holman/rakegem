@@ -98,9 +98,10 @@ namespace :release do
     sh "git commit --allow-empty -a -m 'Release #{version}'"
     sh "git tag v#{version}"
     sh "git push origin master"
-    sh "git push v#{version}"
+    sh "git push origin v#{version}"
     sh "gem push pkg/#{name}-#{version}.gem"
   end
+end
 
   desc "build #{name} version #{version} (after updating)"
   task :build => :gemspec do
